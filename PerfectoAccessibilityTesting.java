@@ -21,8 +21,8 @@ public class PerfectoAccessibilityTesting {
 	
 	public static void main(String[] args) throws Exception {
 
-		AppiumDriver driver;
-	   	ReportiumClient reportiumClient;
+		AppiumDriver driver=null;
+	   	ReportiumClient reportiumClient=null;
 		
 		String cloudName = <CLOUD_NAME>;
 		
