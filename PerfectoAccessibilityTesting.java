@@ -22,7 +22,7 @@ public class PerfectoAccessibilityTesting {
 	public static void main(String[] args) throws Exception {
 
 		AppiumDriver driver;
-	    ReportiumClient reportiumClient;
+	   	ReportiumClient reportiumClient;
 		
 		String cloudName = <CLOUD_NAME>;
 		
@@ -48,13 +48,13 @@ public class PerfectoAccessibilityTesting {
 			
 		//driver = new AndroidDriver(new URL("https://" + cloudName  + ".perfectomobile.com/nexperience/perfectomobile/wd/hub"), capabilities);
 		
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         
-        PerfectoExecutionContext perfectoExecutionContext = new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
-        .withWebDriver(driver)
-        .build();
+       		PerfectoExecutionContext perfectoExecutionContext = new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
+        	.withWebDriver(driver)
+        	.build();
         
-        reportiumClient = new ReportiumClientFactory().createPerfectoReportiumClient(perfectoExecutionContext);
+        	reportiumClient = new ReportiumClientFactory().createPerfectoReportiumClient(perfectoExecutionContext);
         
 		reportiumClient.testStart("Perfecto Accessibility Testing", new TestContext("", "")); //Starts the reportium testd
 
